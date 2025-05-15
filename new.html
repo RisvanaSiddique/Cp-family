@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to My Website</title>
+  <style>
+    body {
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      margin: 0;
+      padding: 0;
+      
+    background: linear-gradient(to right, #ededed, #DBB778, #F0CF95,#dce4eb);}
+  
+    header {
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav {
+      text-align: center;
+      margin: 20px 0;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      font-size: larger;
+     
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #716e6e;
+      color: white;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    } 
+
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #333;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #333;
+        z-index: 1;
+      }
+
+      
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1> CP KATTAYTT PARAMBAB FAMILY</h1>
+    <h2>CP MOYIDEEN - EYYATUTTI</h2>
+  </header>
+
+  <nav>
+    <a href="mayanad.html" target="_blank">TATTARI FAMILY</a>
+  </nav>
+  <nav>
+    <a href="anajnkandi.html" target="_blank">ACHANKANDI FAMILY</a>
+  </nav>
+
+  <nav>
+    <a href="cp.html" target="_blank">CP HOUSE FAMILY</a>
+  </nav>
+
+  <nav>
+    <a href="chaliyarakkal.html" target="_blank">CHALIYARAKKAL FAMILY</a>
+  </nav>
+
+  <nav>
+    <a href="kappurath.html" target="_blank">KAPPURATH FAMILY</a>
+  </nav>
+
+  <nav>
+    <a href="cheruvatta.html" target="_blank">CHERUVATTA FAMILY</a>
+  </nav>
+
+  <nav>
+    <a href="arapuzha.html" target="_blank">ARAPUZHA FAMILY</a>
+  </nav>
+  <nav>
+    <a href="kuttikkattoor.html" target="_blank">KUTTIKKATTOOR FAMILY</a>
+    <div class="hamburger" onclick="toggleMenu()">
+      <i class="fa fa-bars"></i>
+    </div>
+  </nav>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+
+</body>
+
+</html>
